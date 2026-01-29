@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Linkedin, Facebook, Twitter, Github, ChevronDown, Globe } from 'lucide-react';
-import Logo from './Logo';
+import Logo from '../assets/images/logo.png';
 import { useTranslation } from '../../App';
 import { cn } from '../lib/utils';
 
@@ -41,8 +41,8 @@ const Footer: React.FC = () => {
         {/* Main Footer Links */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <Logo className="w-10 h-10" />
+            <div className="flex items-center gap-1 mb-6">
+              <img src={Logo} alt="Logo" className="w-20 h-16 object-contain" />
               <span className="text-2xl font-bold tracking-tight text-white">
                 Toona<span className="text-blue-500">PHAR</span>
               </span>

@@ -2,12 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { cn } from '../lib/utils';
-import Logo from './Logo';
+import Logo from '../assets/images/logo.png';
 import { useTranslation } from '../../App';
 
 interface NavbarProps {
   onLoginClick?: () => void;
 }
+
 
 const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
   const { language, setLanguage, t } = useTranslation();
@@ -49,8 +50,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <Logo className="w-10 h-10" />
+        <div className="flex items-center gap-1">
+          <img src={Logo} alt="Logo" className="w-20 h-16 object-contain" />
           <span className={cn(
             "text-xl font-bold tracking-tight transition-colors",
             isScrolled ? "text-slate-900" : "text-white"
