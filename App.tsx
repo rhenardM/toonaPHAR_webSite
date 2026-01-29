@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
-import Home from './src/pages/Home';
-import Login from './src/pages/Login';
-import Payment from './src/pages/Payment';
+import Home from './src/pages/Home/Home.tsx';
+import Login from './src/pages/Auth/Login.tsx';
+import Payment from './src/pages/Payment/Payment.tsx';
 import { Language, translations } from './src/lib/i18n';
 
 interface LanguageContextType {

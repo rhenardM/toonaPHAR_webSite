@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, CreditCard, ChevronLeft, Loader2, Smartphone, ShieldCheck, Info, AlertCircle, CheckCircle2 } from 'lucide-react';
-import Logo from '../components/Logo';
-import { cn } from '../lib/utils';
-import { useTranslation } from '../../App';
+import logo from '../../assets/images/logo.png';
+import { cn } from '../../lib/utils';
+import { useTranslation } from '../../../App';
 
 interface PaymentProps {
   planId: string;
@@ -77,7 +77,7 @@ const Payment: React.FC<PaymentProps> = ({ planId, months, onBack }) => {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10 py-4 px-6">
         <div className="container mx-auto flex justify-between items-center">
           <button onClick={onBack} className="flex items-center gap-3">
-            <Logo className="w-8 h-8" />
+            <img src={logo} alt="Logo" className="w-8 h-8" />
             <span className="text-lg font-bold">Toona<span className="text-blue-500">PHAR</span></span>
           </button>
           <div className="flex items-center gap-4">

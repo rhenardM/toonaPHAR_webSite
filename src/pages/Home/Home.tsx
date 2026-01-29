@@ -1,13 +1,13 @@
 
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Overview from '../components/Overview';
-import Features from '../components/Features';
-import Pricing from '../components/Pricing';
-import FAQ from '../components/FAQ';
-import CTASection from '../components/CTASection';
-import Footer from '../components/Footer';
+import Navbar from '../../components/Navbar';
+import Hero from '../../components/Hero';
+import Overview from '../../components/Overview';
+import Features from '../../components/Features';
+import Pricing from '../../components/Pricing';
+import FAQ from '../../components/FAQ';
+import CTASection from '../../components/CTASection';
+import Footer from '../../components/Footer';
 
 interface HomeProps {
   onLoginClick: () => void;

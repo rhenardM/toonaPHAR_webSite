@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, EyeOff, ArrowLeft, Loader2, Phone } from 'lucide-react';
-import Logo from '../components/Logo';
-import { useTranslation } from '../../App';
+import logo from '../../assets/images/logo.png';
+import { useTranslation } from '../../../App';
 
 interface LoginProps {
   onBack: () => void;
@@ -64,7 +64,7 @@ const Login: React.FC<LoginProps> = ({ onBack, onLoginSuccess }) => {
       <header className="w-full py-6 px-6 border-b border-slate-50">
         <div className="container mx-auto flex justify-between items-center">
           <button onClick={onBack} className="flex items-center gap-3 text-slate-900 font-bold group">
-            <Logo className="w-10 h-10" />
+            <img src={logo} alt="Logo" className="w-10 h-10" />
             <span className="text-xl tracking-tight">Toona<span className="text-blue-500">PHAR</span></span>
           </button>
           <button onClick={onBack} className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors">
