@@ -2,7 +2,7 @@
 import React from 'react';
 import { Linkedin, Facebook, Twitter, Github, ChevronDown, Globe } from 'lucide-react';
 import Logo from './Logo';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 import { cn } from '../lib/utils';
 
 const Footer: React.FC = () => {
@@ -119,8 +119,8 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs text-slate-500 font-medium">
-            © 2016 - {new Date().getFullYear()} ToonaPHAR. {t.footer.copyright}
+          <p className="text-xs text-slate-600 font-medium">
+            ©  {new Date().getFullYear()} <a href="https://calculus-system.cd" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-400">calculus-system.cd</a> &mdash; {t.footer.copyright}
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-slate-500 hover:text-white transition-colors">

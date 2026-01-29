@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, EyeOff, ArrowLeft, Loader2, Phone } from 'lucide-react';
 import Logo from '../components/Logo';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface LoginProps {
   onBack: () => void;

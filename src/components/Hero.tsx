@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Layout, Shield, Database } from 'lucide-react';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface HeroProps {
   onStartClick?: () => void;

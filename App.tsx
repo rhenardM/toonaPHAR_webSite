@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Payment from './pages/Payment';
-import { Language, translations } from './lib/i18n';
+import Home from './src/pages/Home';
+import Login from './src/pages/Login';
+import Payment from './src/pages/Payment';
+import { Language, translations } from './src/lib/i18n';
 
 interface LanguageContextType {
   language: Language;

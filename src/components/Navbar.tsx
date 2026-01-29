@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { cn } from '../lib/utils';
 import Logo from './Logo';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface NavbarProps {
   onLoginClick?: () => void;

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface CTASectionProps {
   onStartClick?: () => void;

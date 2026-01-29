@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
 import { cn } from '../lib/utils';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface PricingProps {
   onSelectPlan: (id: string, months: number) => void;
@@ -16,7 +16,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
     {
       id: "basic",
       name: "Basique",
-      price: 15000,
+      price: 9,
       description: t.pricing.subtitle, // Simple placeholder
       cta: t.pricing.cta_trial,
       features: [
@@ -30,8 +30,8 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
     },
     {
       id: "pro",
-      name: "Pro",
-      price: 35000,
+      name: "Croissance",
+      price: 19,
       description: t.pricing.subtitle,
       recommended: true,
       cta: t.pricing.cta_sub,
@@ -48,7 +48,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
     {
       id: "enterprise",
       name: "Entreprise",
-      price: 75000,
+      price: 74,
       description: t.pricing.subtitle,
       cta: t.pricing.cta_contact,
       features: [
@@ -117,7 +117,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
                   <h4 className="text-xl font-bold text-blue-950 mb-2">{plan.name}</h4>
                   <div className="flex items-baseline gap-1 mb-2">
                     <span className="text-3xl font-extrabold text-blue-950">{displayPrice.toLocaleString()}</span>
-                    <span className="text-slate-400 font-medium">FCFA / {t.pricing.monthly.toLowerCase()}</span>
+                    <span className="text-slate-400 font-medium">$ / {t.pricing.monthly.toLowerCase()}</span>
                   </div>
                 </div>
 

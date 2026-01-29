@@ -9,7 +9,7 @@ import {
   Smartphone, 
   History 
 } from 'lucide-react';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 const Features: React.FC = () => {
   const { t } = useTranslation();

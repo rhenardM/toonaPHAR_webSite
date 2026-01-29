@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Check, CreditCard, ChevronLeft, Loader2, Smartphone, ShieldCheck, Info, AlertCircle, CheckCircle2 } from 'lucide-react';
 import Logo from '../components/Logo';
 import { cn } from '../lib/utils';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 interface PaymentProps {
   planId: string;
@@ -216,7 +216,7 @@ const Payment: React.FC<PaymentProps> = ({ planId, months, onBack }) => {
                     <div className="bg-blue-900 rounded-[2.5rem] p-10 mb-10 text-center shadow-2xl shadow-blue-900/20 relative overflow-hidden">
                       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600/20 to-transparent pointer-events-none"></div>
                       <p className="text-blue-200 text-xs mb-3 uppercase tracking-[0.2em] font-black relative z-10">{t.payment.pay_total}</p>
-                      <p className="text-5xl md:text-6xl font-black text-white relative z-10">{totalPrice.toLocaleString()} <span className="text-2xl text-blue-300">FCFA</span></p>
+                      <p className="text-5xl md:text-6xl font-black text-white relative z-10">{totalPrice.toLocaleString()} <span className="text-2xl text-blue-300">$</span></p>
                     </div>
 
                     {isLoading ? (
@@ -280,7 +280,7 @@ const Payment: React.FC<PaymentProps> = ({ planId, months, onBack }) => {
                 <p className="text-[10px] uppercase font-black text-slate-400 tracking-[0.2em] mb-1">{t.payment.pay_total}</p>
                 <div className="flex items-baseline gap-2">
                   <p className="text-4xl font-black text-blue-600">{totalPrice.toLocaleString()}</p>
-                  <p className="text-sm font-black text-blue-400 uppercase">FCFA</p>
+                  <p className="text-sm font-black text-blue-400 uppercase">$</p>
                 </div>
               </div>
             </div>

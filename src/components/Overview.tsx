@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PackageSearch, Ban, HeartPulse, ShieldCheck } from 'lucide-react';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 const Overview: React.FC = () => {
   const { t } = useTranslation();

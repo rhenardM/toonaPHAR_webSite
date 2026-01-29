@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
-import { useTranslation } from '../App';
+import { useTranslation } from '../../App';
 
 const FAQ: React.FC = () => {
   const { t } = useTranslation();
