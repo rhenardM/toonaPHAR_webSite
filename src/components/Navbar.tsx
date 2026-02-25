@@ -28,7 +28,6 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
     { name: t.nav.products, href: '#features' },
     { name: t.nav.useCases, href: '#overview' },
     { name: t.nav.pricing, href: '#pricing' },
-    { name: t.nav.devs, href: '#' },
     { name: t.nav.faq, href: '#faq' },
   ];
 
@@ -72,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
               )}
             >
               {link.name}
-              {(link.name === t.nav.products || link.name === t.nav.devs) && <ChevronDown className="w-4 h-4" />}
+              {/* {(link.name === t.nav.products || link.name === t.nav.devs) && <ChevronDown className="w-4 h-4" />} */}
             </a>
           ))}
         </div>
